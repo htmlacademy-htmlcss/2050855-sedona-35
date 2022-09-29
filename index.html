@@ -38,9 +38,90 @@
         </ul>
     </header>
 
+    <main class="main-index">
+      <div class="welcome">
+        <img class="welcome-caption" src="#" width="#" height="#" alt="Welcome to Sedona">
+      </div>
+      <section class="reasons">
+        <h1 class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="reasons-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <ul class="reasons-list">
+          <li class="reasons-item">
+            <h2 class="reasons-item-title">Настоящий городок</h2>
+            <p class="reasons-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="reasons-item-image" src="#" width="#" height="#" alt="Настоящий городок">
+          </li>
+          <li class="reasons-item">
+            <h2 class="reasons-item-title">Небольшая площадь</h2>
+            <p class="reasons-item-description">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="reasons-item">
+            <h2 class="reasons-item-title">Красивая дорога</h2>
+            <p class="reasons-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="reasons-item">
+            <h2 class="reasons-item-title">Мало туристов</h2>
+            <p class="reasons-item-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="reasons-item">
+            <img class="reasons-item-image" src="#" width="#" height="#" alt="Там есть мост дьявола">
+            <h2 class="reasons-item-title">Там есть мост дьявола</h2>
+            <p class="reasons-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+        </ul>
 
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h2 class="advantages-title">Жильё</h2>
+            <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="advantages-item">
+            <h2 class="advantages-title">Еда</h2>
+            <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="advantages-item">
+            <h2 class="advantages-title">Сувениры</h2>
+            <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
 
+      <section class="appointment">
+        <h2 class="appointment-title">Заинтересовались?</h2>
+        <p class="appointment-comment">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button appointment-button" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <div class="modal">
+        <form class="modal-form" action="#" method="post">
+          <label class="modal-date" for="checkin">Дата заезда:
+            <input class="modal-input" type="text" name="checkin" id="checkin" value="27 апреля 2020">
+            <span class="error">Мы не можем отправить вас в прошлое.</span>
+          </label>
 
+          <label class="modal-date" for="checkout">Дата выезда:
+            <input class="modal-input" type="text" name="checkout" id="checkout" value="1 сентября 2023">
+            <span class="comment">На эти даты есть свободные номера. Пока есть.</span>
+          </label>
+
+          <label class="modal-quantity" for="adults">Взрослые:
+            <input class="modal-input" type="number" name="adults" id="adults" value="2">
+          </label>
+          <label class="modal-quantity" for="children">Дети:
+            <input class="modal-input" type="number" name="children" id="children" value="2">
+          </label>
+          <button class="button search-button" type="submit">Найти</button>
+        </form>
+      </div>
+
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-comment">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="subscription-email">Ваш e-mail</label>
+          <input class="field" placeholder="email@example.com" type="email" name="subscription-email" id="subscription-email" required>
+          <button class="button subscription-button" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
 
     
