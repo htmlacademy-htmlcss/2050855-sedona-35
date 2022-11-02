@@ -80,7 +80,7 @@ body {
     width: 450px;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
     align-items: center;
 
 }
@@ -212,7 +212,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    list-style: none;
+    list-style-type: none;
 
 }
 .advantages-item {
@@ -507,7 +507,7 @@ body {
     line-height: 24px;
 }
 .catalog-filter-list {
-    list-style: none;
+    list-style-type: none;
 }
 .control {
     color: #FFFFFF;
@@ -561,8 +561,7 @@ body {
 .hotel-list {
     display: grid;
     grid-template-columns: 340px 340px 340px;
-    gap: 20px;
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     margin-bottom: 80px;
@@ -646,7 +645,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
 }
 
 .pagination-link {
