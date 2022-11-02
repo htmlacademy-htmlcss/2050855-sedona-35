@@ -14,25 +14,39 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
-
+html {
+    height: 100%;
+}
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     background-color: #FFFFFF;
-  }
+}
 
+.button {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 .visually-hidden {
     position: absolute;
-    overflow: hidden;
-    padding: 0;
-    border: 0;
     width: 1px;
     height: 1px;
     margin: -1px;
+    padding: 0;
+    border: 0;
     clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /*header */
@@ -47,8 +61,9 @@ body {
     width: 1200px;
 }
 .logo {
-    margin-left: 70px;
+    width: 140px;
     margin-right: 28px;
+    margin-left: 70px;
     margin-bottom: -8px;
     z-index: 1;
 
@@ -56,27 +71,27 @@ body {
 .navigation {
     display: flex;
     width: 1060px;
+    margin: 0 auto;
 
 }
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
+    width: 450px;
     margin: 0;
+    padding: 0;
+    list-style: none;
     align-items: center;
-    width: 470px;
+
 }
 .navigation-user {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: auto;
-    align-items: center;
     max-width: 340px;
+    margin-left: auto;
 
+}/*
+.navigation-user .navigation-link {
+    min-width: 16px;
+    min-height: 22px;
 }
 /*Главная, О Седоне, Гостиницы для ссылок (поиск, избранное, хочу сюда)*/
 .navigation-link {
@@ -92,6 +107,7 @@ body {
 
 
 }
+
 /*Поиск, избранное, хочу сюда для ссылок*/
 
 .navigation-link-search {
@@ -104,8 +120,8 @@ body {
     background-image: url("../images/favorites.svg");
     background-repeat: no-repeat;
     background-position: 50%;
-    position: relative;
     margin-right: 33px;
+    position: relative;
 }
 .navigation-favorites {
     font-size: 10px;
@@ -137,6 +153,9 @@ body {
 }
 /*Main*/
 .main-container {
+    flex-grow: 1;
+}
+.page-container {
     width: 1200px;
     margin: 0 auto;
 }
@@ -152,7 +171,11 @@ body {
     padding-top: 50px;
     position: relative;
 }
-
+.welcome-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
 .welcome-decorative-element {
     background-image: url("../images/decorative-element-welcome.svg");
     background-size: 100% 57px;
@@ -172,6 +195,7 @@ body {
     width: 620px;
     margin: 0 auto;
     margin-bottom: 25px;
+    text-align: center;
 }
 .description {
     margin: 0;
@@ -184,10 +208,12 @@ body {
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    list-style: none;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
+    text-align: center;
+    list-style: none;
+
 }
 .advantages-item {
     width: 400px;
@@ -370,43 +396,48 @@ body {
     height: 120px;
     text-align: center;
 }
-.footer-container {
+.page-footer-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
     width: 1060px;
     height: 50px;
     margin: 0 auto;
-    padding: 0;
     padding-top: 40px;
     padding-bottom: 30px;
 
 }
 
 .footer-social {
-    width: 142px;
-    margin-right: 42px;
+    min-width: 142px;
     margin-left: 70px;
+    height: 40px;
+
 }
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+
 }
 .footer-social-item {
-    width: 18px;
-    height: 15px;
-    margin-right: 27px;
-    margin-bottom: 10px;
+    width: 48px;
+    height: 40px;
+
+}
+.social-link {
+    padding: 13px 11px;
+
 }
 .footer-social-item:last-child {
     margin-right: 0;
 }
 .footer-contacts {
-    width: 720px;
-    height: 50px;
+    width: 331px;
+    margin-left: auto;
 }
 .footer-contacts-phone {
     font-weight: 400;
@@ -415,13 +446,14 @@ body {
     text-decoration: none;
     color: #000000;
     text-align: center;
+    text-transform: uppercase;
+    padding:  5px 0;
 }
 .htmlacademy {
-    width: 115px;
+    max-width: 115px;
     margin-left: auto;
-    margin-right: 70px;
 }
-
+/*Каталог*/
 .catalog-background {
     background-image: url("../images/catalod-background.jpg");
     background-repeat: no-repeat;
@@ -441,7 +473,7 @@ body {
 .breadcrumbs {
     display: flex;
     color: #FFFFFF;
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     margin-bottom: 40px;
@@ -465,6 +497,8 @@ body {
 }
 .catalog-filter {
     display: flex;
+    width: 1060px;
+
 }
 .catalog-filter-title {
     color: #FFFFFF;
@@ -481,37 +515,49 @@ body {
     line-height: 23px;
 }
 .catalog-hotels {
-    padding: 56px 70px 60px 70px;
+    padding: 50px 70px 60px 70px;
 }
-.catalog-hotels-container {
+.sorting-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 40px;
+    width: 1060px;
+    height: 49px;
 }
 .catalog-hotels-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    margin-right: 200px;
+    margin: 0;
+    margin-right: 220px;
+    width: 338px;
+    height: 36px;
 }
-.catalog-hotels-title .button {
+.select-control {
+    margin-right: 70px;
+    width: 292px;
+    height: 49px;
+
+
+}
+.sorting-container .button {
     width: 48px;
     height: 48px;
     border: 2px solid #e5e5e5;
     border-radius: 4px;
     margin-right: 8px;
 }
-.catalog-hotels-title .button:last-child {
+.sorting-container .button:last-child {
     margin-right: 0;
 }
-.catalog-hotels-title .button-active {
+.sorting-container .button-active {
     border: 2px solid #000000;
     border-radius: 4px;
 }
-.select-control {
-    margin-right: 70px;
-    width: 292px;
-}
+
 .hotel-list {
     display: grid;
     grid-template-columns: 340px 340px 340px;
