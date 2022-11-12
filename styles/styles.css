@@ -17,6 +17,9 @@
 html {
     height: 100%;
 }
+* {
+    outline: 2px solid red;
+}
 body {
     margin: 0;
     display: flex;
@@ -64,7 +67,7 @@ body {
     width: 140px;
     margin-right: 28px;
     margin-left: 70px;
-    margin-bottom: -8px;
+    margin-bottom: -6px;
     z-index: 1;
 
 }
@@ -166,7 +169,6 @@ body {
     background-color: #82B3D3;
     text-align: center;
     align-items: center;
-    height: 428px;
     margin-bottom: 70px;
     padding-top: 50px;
     position: relative;
@@ -182,7 +184,6 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: 57px;
-    position: absolute;
     bottom: 0;
 
 }
@@ -208,7 +209,6 @@ body {
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -248,7 +248,7 @@ body {
     content: "";
     position: absolute;
     background-color: rgba(255, 255, 255, 0.3);
-    top: 179px;
+    top: 178px;
     right: 170px;
     width: 60px;
     height: 2px;
@@ -260,7 +260,7 @@ body {
 }
 .advantages-item-image {
     width: 800px;
-    height: 384px;
+
 }
 .advantages-item-second {
     color: #000000;
@@ -269,13 +269,7 @@ body {
     padding-bottom: 121px;
 }
 .advantages-item-second .advantages-title::after {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
-    top: 179px;
-    right: 170px;
-    width: 60px;
-    height: 2px;
+
 }
 .advantages-item-third {
     color: #000000;
@@ -309,7 +303,6 @@ body {
 .advantages-item-hotel, .advantages-item-meal, .advantages-item-souvenirs {
     padding-top: 182px;
     padding-bottom: 80px;
-    margin-bottom: 30px;
 }
 
 
@@ -389,18 +382,13 @@ body {
     padding: 8px 50px;
     text-transform: uppercase;
     text-decoration: none;
-}*/
-/*Footer*/
-.page-footer {
-    width: 1200px;
-    height: 120px;
-    text-align: center;
 }
+/*Footer*/
+
 .page-footer-container {
     display: flex;
     align-items: center;
-    width: 1060px;
-    height: 50px;
+    width: 1200px;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 30px;
@@ -408,9 +396,9 @@ body {
 }
 
 .footer-social {
-    min-width: 142px;
+    width: 142px;
     margin-left: 70px;
-    height: 40px;
+    margin-right: 40px;
 
 }
 .footer-social-list {
@@ -419,21 +407,20 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-align: center;
-    align-items: center;
+
 
 }
 .footer-social-item {
-    width: 48px;
+    width: 47px;
     height: 40px;
 
-}
-.social-link {
-    padding: 13px 11px;
 
 }
 .footer-social-item:last-child {
     margin-right: 0;
+}
+.social-link {
+
 }
 .footer-contacts {
     width: 331px;
@@ -445,13 +432,12 @@ body {
     line-height: 40px;
     text-decoration: none;
     color: #000000;
-    text-align: center;
-    text-transform: uppercase;
-    padding:  5px 0;
+
 }
 .htmlacademy {
     max-width: 115px;
     margin-left: auto;
+    margin-right: 70px;
 }
 /*Каталог*/
 .catalog-background {
@@ -485,14 +471,12 @@ body {
 .breadcrumbs-house::after {
     content: url(../images/house.svg);
     width: 12px;
-    height: 12px;
     margin-right: 11px;
     padding: 10px;
 }
 .breadcrumbs-item:last-child::before {
     content: url(../images/breadcrumbs.svg);
     width: 12px;
-    height: 12px;
     margin-right: 11px;
 }
 .catalog-filter {
@@ -524,7 +508,6 @@ body {
     align-items: center;
     margin-bottom: 40px;
     width: 1060px;
-    height: 49px;
 }
 .catalog-hotels-title {
     font-weight: 700;
@@ -534,18 +517,13 @@ body {
     margin: 0;
     margin-right: 220px;
     width: 338px;
-    height: 36px;
 }
 .select-control {
     margin-right: 70px;
     width: 292px;
-    height: 49px;
-
-
 }
 .sorting-container .button {
     width: 48px;
-    height: 48px;
     border: 2px solid #e5e5e5;
     border-radius: 4px;
     margin-right: 8px;
@@ -564,6 +542,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    gap: 16px;
     margin-bottom: 80px;
 }
 .hotel-card {
@@ -578,7 +557,6 @@ body {
 }
 .hotel-card-image {
     width: 300px;
-    height: 212px;
     margin-bottom: 16px;
 }
 .hotel-card-title {
@@ -628,6 +606,10 @@ body {
     cursor: pointer;
 
 }
+.hotel-card-chosen {
+    padding: 8px 16px;
+    background-color: #7DB54F;
+}
 .star {
     color: #82B3D3;
 }
@@ -656,7 +638,6 @@ body {
     border-radius: 4px;
     padding: 12px 24px;
     width: 60px;
-    height: 60px;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
