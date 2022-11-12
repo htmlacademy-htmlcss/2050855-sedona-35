@@ -112,7 +112,7 @@ body {
 }
 .navigation-link-current::before {
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     content: "";
     height: 2px;
     right: 16px;
@@ -486,7 +486,7 @@ body {
 
 /*Каталог*/
 .catalog-background {
-    background-image: url("../images/catalod-background.jpg");
+    background-image: url("../images/catalog-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #82B3D3;
@@ -900,10 +900,10 @@ body {
     color: #F2F2F2;
 }
 .button:active {
-    color: ;
+    color: rgba(255, 255, 255, 0.3);
 }
 .button:disabled {
-    background-color: ;
+    background-color: #e5e5e5;
 }
 .navigation-link-want:hover,
 .appointment-button:hover,
@@ -954,7 +954,6 @@ body {
     border: none;
     border-radius: 4px 0 0 4px;
     background-color: #F2F2F2;
-
 }
 .button-subscription {
     color: #FFFFFF;
@@ -1001,11 +1000,9 @@ body {
     right: 20px;
     top: 12px;
     opacity: 0.3;
-
 }
 .range-input {
     width: 143px;
-    font-weight: 700;
     line-height: 24px;
     padding: 12px 20px;
     border: none;
@@ -1019,9 +1016,11 @@ body {
 }
 .range-input-left {
     border-radius: 4px 0 0 4px;
+    font-weight: 700;
 }
 .range-input-right {
     border-radius: 0 4px 4px 0;
+    font-weight: 700;
 }
 .range-input:focus {
     outline:  3px solid #82B3D3;
@@ -1062,7 +1061,7 @@ body {
 }
 .toggle-max {
     right: -10px;
-    top: 0;
+    top: -10px;
 }
 /*Модальное окно*/
 .modal-container {
@@ -1097,9 +1096,6 @@ body {
     width: 50px;
     height: 50px;
     cursor: pointer;
-}
-.placeholder {
-    color: #000000;
 }
 .close-circle:hover {
     fill: #e6e6e6;
@@ -1173,6 +1169,9 @@ body {
     border: none;
     min-height: 48px;
     width: 434px;
+}
+.field::placeholder {
+    color: #000000;
 }
 .old {
     margin-right: 46px;
@@ -1265,6 +1264,10 @@ body {
 .control-score:active .control-score-minus,
 .control-score:active .control-score-plus {
     opacity: 0.2;
+}
+.tooltip {
+    width: 26px;
+    height: 26px;
 }
 .tooltip-toggle {
     background-color: transparent;
