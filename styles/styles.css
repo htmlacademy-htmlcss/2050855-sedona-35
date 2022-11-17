@@ -34,7 +34,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    background-color: #e5e5e5;
+    background-color: #F2F2F2;
 }
 
 .button {
@@ -191,8 +191,8 @@ body {
 .welcome-to-sedona {
     background-color: #82B3D3;
     background-image: url("../images/decorative-element-welcome.svg"), url("../images/index-background.jpg");
-    background-position: center bottom;
-    background-size: 100% auto;
+    background-position: center bottom, center;
+    background-size: 100%, cover;
     background-repeat: no-repeat;
     text-align: center;
     margin-bottom: 69px;
@@ -270,6 +270,7 @@ body {
 .advantages-img {
     width: 800px;
     height: 384px;
+    background-size: cover;
 }
 
 .advantages-light-color {
@@ -824,6 +825,7 @@ body {
 
 .hotel-card-image {
     margin-bottom: 16px;
+    background-size: cover;
 }
 
 .hotel-card-line {
@@ -915,6 +917,10 @@ body {
     line-height: 20px;
     border-radius: 4px;
     text-transform: uppercase;
+}
+
+.hotel-card-top {
+    margin-top: auto;
 }
 
 .pagination {
@@ -1513,6 +1519,5 @@ body {
 .shadow {
     margin: 0 auto;
     width: 1200px;
-    background: #f2f2f2;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
