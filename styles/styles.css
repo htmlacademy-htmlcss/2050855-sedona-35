@@ -192,7 +192,7 @@ body {
     background-color: #82B3D3;
     background-image: url("../images/decorative-element-welcome.svg"), url("../images/index-background.jpg");
     background-position: center bottom;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
     margin-bottom: 69px;
@@ -824,6 +824,7 @@ body {
 
 .hotel-card-image {
     margin-bottom: 16px;
+    background-size: cover;
 }
 
 .hotel-card-line {
@@ -915,6 +916,10 @@ body {
     line-height: 20px;
     border-radius: 4px;
     text-transform: uppercase;
+}
+
+.hotel-card-top {
+    margin-top: auto;
 }
 
 .pagination {
