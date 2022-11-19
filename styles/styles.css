@@ -74,7 +74,7 @@ body {
 .logo {
     margin-right: 28px;
     margin-left: 70px;
-    margin-bottom: -8px;
+    margin-bottom: -10px;
     z-index: 1;
 }
 
@@ -157,6 +157,7 @@ body {
     align-items: center;
     position: absolute;
     top: 0;
+    right: 4px;
     width: 20px;
     height: 20px;
     border-radius: 10px;
@@ -258,6 +259,11 @@ body {
     width: 175px;
     margin: 0 auto;
     margin-bottom: 62px;
+    padding-bottom: 1px;
+}
+
+.advantages-title-margin {
+    padding-right: 4px;
 }
 
 .advantages-description {
@@ -443,17 +449,20 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-top: 5px;
 }
 
 .footer-social-item {
     width: 23px;
     height: 20px;
     margin-right: 27px;
-    margin-bottom: 10px;
+    padding-left: 12px;
 }
 
 .footer-social-item:last-child {
-    margin-right: 0;
+    margin-right: 15px;
+    padding-left: 6px;
+    padding-top: 1px;
 }
 
 .footer-social-link:hover .vkontakte,
@@ -475,6 +484,12 @@ body {
 }
 
 /*Номер телефона*/
+.footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
 .footer-contacts-phone {
     font-weight: 400;
     font-size: 40px;
@@ -497,6 +512,7 @@ body {
     max-width: 115px;
     margin-left: auto;
     margin-right: 70px;
+    margin-top: 8px;
 }
 
 .htmlacademy-link:hover .logo-htmlacademy,
@@ -523,7 +539,7 @@ body {
     font-size: 60px;
     font-weight: 700;
     line-height: 78px;
-    margin-top: 0;
+    margin-top: -1px;
     margin-bottom: 8px;
 }
 
@@ -540,6 +556,7 @@ body {
 .breadcrumbs-link {
     color: inherit;
     margin-right: 28px;
+    font-size: 16px;
 }
 
 .breadcrumbs-link:hover {
@@ -554,14 +571,14 @@ body {
     content: url("../images/house.svg");
     width: 12px;
     height: 11px;
-    padding: 10px;
+    padding-right: 10px;
 }
 
 .breadcrumbs-item:last-child::before {
     content: url("../images/breadcrumbs.svg");
     width: 12px;
     height: 11px;
-    margin-right: 11px;
+    margin-right: 5px;
 }
 
 .catalog-filter {
@@ -575,12 +592,17 @@ body {
     border: none;
 }
 
+.catalog-filter-group:nth-last-child(3) {
+    margin-right: 150px;
+}
+
 .catalog-filter-title {
     color: #FFFFFF;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 32px;
+    padding: 0;
 }
 
 .catalog-filter-list {
@@ -738,7 +760,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: center;
     margin-bottom: 40px;
+    margin-top: 1px;
 }
 
 .sorting-container .button {
@@ -778,9 +802,14 @@ body {
     border-radius: 4px;
     border: 2px solid #E5E5E5;
     margin-right: 70px;
-    padding-left: 10px;
+    padding: 10px 14px 10px 14px;
     font-size: 18px;
     line-height: 21px;
+    appearance: none;
+    background: url(../images/arrow-down.svg) no-repeat right;
+    background-position-x: calc(100% - 18px);
+    margin-bottom: 2px;
+    padding-left: 18px;
 }
 
 .select-control:hover {
@@ -835,7 +864,8 @@ body {
 }
 
 .hotel-card-type {
-    padding-bottom: 10px;
+    padding-bottom: 16px;
+    font-weight: 400;
 }
 
 .hotel-card-title {
@@ -843,7 +873,7 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
-    margin: 0;
+    margin-top: -5px;
     margin-bottom: 16px;
 }
 
@@ -856,7 +886,7 @@ body {
 .hotel-card-more {
     background-color: #756157;
     color: #FFFFFF;
-    padding: 8px 25px;
+    padding: 8px 26px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: 700;
@@ -870,7 +900,7 @@ body {
     display: inline-block;
     background-color: #82B3D3;
     color: #FFFFFF;
-    padding: 8px 18px;
+    padding: 8px 20px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -883,7 +913,7 @@ body {
 }
 
 .hotel-card-chosen {
-    padding: 8px 16px;
+    padding: 8px 17px;
     background-color: #7DB54F;
 }
 
@@ -910,7 +940,7 @@ body {
 .hotel-card-rating {
     background-color: #f2f2f2;
     color: #333333;
-    padding: 9px 22px;
+    padding: 9px 22px 8px 23px;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -932,6 +962,7 @@ body {
 
 .pagination-item {
     margin-bottom: 5px;
+    margin-top: -2px;
 }
 
 .pagination-item:not(:last-child) {
@@ -973,6 +1004,8 @@ body {
 .pagination-else {
     color: #000000;
     background-color: #FFFFFF;
+    font-weight: 400;
+    padding: 12px 21px;
 }
 
 .pagination {
@@ -985,7 +1018,7 @@ body {
     width: 1060px;
     position: absolute;
     background-color: #F2F2F2;
-    top: -40px;
+    top: -42px;
 }
 
 .subscription-catalog {
@@ -993,6 +1026,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 362px;
+}
+
+.subscription-inside-catalog {
+    padding-top: 92px;
 }
 
 .subscription-title-catalog {
@@ -1078,7 +1115,7 @@ body {
     font-weight: 400;
     width: 452px;
     margin: 0;
-    padding: 14px 20px;
+    padding: 14px 19px;
     border: none;
     border-radius: 4px 0 0 4px;
     background-color: #F2F2F2;
@@ -1095,7 +1132,6 @@ body {
     text-transform: uppercase;
     border: none;
     border-radius: 0 4px 4px 0;
-    margin-left: -4px;
 }
 
 .subscription-field:hover {
@@ -1124,6 +1160,7 @@ body {
 .range-wrapper-inputs {
     margin-bottom: 48px;
     position: relative;
+    margin-left: 1px;
 }
 
 .filter-left {
@@ -1142,6 +1179,7 @@ body {
 
 .range-input {
     width: 143px;
+    height: 48px;
     line-height: 24px;
     padding: 12px 20px;
     border: none;
@@ -1157,6 +1195,7 @@ body {
 .range-input-left {
     border-radius: 4px 0 0 4px;
     font-weight: 700;
+    margin-right: -3px;
 }
 
 .range-input-right {
@@ -1178,6 +1217,8 @@ body {
     position: relative;
     height: 4px;
     margin-bottom: 70px;
+    bottom: 5px;
+    left: 1px;
 }
 
 .range-bar {
@@ -1206,12 +1247,12 @@ body {
 
 .toggle-min {
     left: 0;
-    top: -8px;
+    top: -10px;
 }
 
 .toggle-max {
-    right: -10px;
-    top: -10px;
+    right: -12px;
+    top: -8px;
 }
 
 /*Модальное окно*/
